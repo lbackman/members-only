@@ -4,10 +4,13 @@
 
 <div id="posts">
   <% @posts.each do |post| %>
-    <%= render post %>
-    <p>
-      <%= link_to "Show this post", post %>
-    </p>
+    <%= post.title %>
+    <br>
+    <%= post.body %>
+    <br>
+    <%= user_signed_in? ? User.find_by_id(post.user_id).email : "Hidden" %>
+    <br>
+  
   <% end %>
 </div>
 
