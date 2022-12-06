@@ -8,10 +8,10 @@
     <br>
     <%= post.body %>
     <br>
-    <%= user_signed_in? ? User.find_by_id(post.user_id).email : "Hidden" %>
+    <%= user_signed_in? ? User.find_by_id(post.user_id).username : "Hidden" %>
     <br>
   
   <% end %>
 </div>
-
+<br>
 <%= link_to "New post", new_post_path %>
