@@ -20,7 +20,13 @@
 }
 
 body {
-  margin-left: 24px;
+  margin: 24px;
+}
+
+
+a.link-to, a.link-to:visited {
+  color: rgb(233, 233, 242);
+  text-decoration: none;
 }
 
 #posts {
@@ -38,9 +44,35 @@ body {
 .title {
   font-size: 1.25rem;
   margin-bottom: 10px;
+  font-weight: 700;
 }
 
 .body {
   font-style: italic;
   margin-bottom: 5px;
+}
+
+.author {
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.timestamp {
+  font-size: 0.8rem;
+  color: grey;
+}
+
+.buttons {
+  margin-bottom: 24px;
+}
+
+.link-to {
+  background-color: blue;
+  border-radius: 15px;
+  padding: 8px;
+  margin-bottom: 5px;
+}
+
+.link-to:hover {
+  background-color: rgb(37, 37, 218);
 }
