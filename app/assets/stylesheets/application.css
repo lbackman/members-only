@@ -23,14 +23,21 @@ body {
   margin: 24px;
 }
 
-
-a.link-to, a.link-to:visited {
+a.link-to, a.link-to:visited, button {
   color: rgb(233, 233, 242);
   text-decoration: none;
 }
 
-#posts {
-  margin-left: 48px;
+button {
+  background: none;
+	border: none;
+	cursor: pointer;
+	outline: inherit;
+  font-size: inherit;
+}
+
+#posts, .new-post {
+  margin-left: 36px;
 }
 
 .post {
