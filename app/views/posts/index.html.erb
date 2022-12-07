@@ -1,16 +1,12 @@
-<!-- <p ><%= notice %></p> -->
-
 <h1>Posts</h1>
 
 <div id="posts">
   <% @posts.each do |post| %>
-    <%= post.title %>
-    <br>
-    <%= post.body %>
-    <br>
-    <%= user_signed_in? ? User.find_by_id(post.user_id).username : "Hidden" %>
-    <br>
-  
+    <div class="post">
+      <div class="title"><%= post.title %></div>
+      <div class="body"><%= post.body %></div>
+      <div class="author">Author: <%= user_signed_in? ? User.find_by_id(post.user_id).username : "Hidden" %></div>
+    </div>
   <% end %>
 </div>
 <br>
