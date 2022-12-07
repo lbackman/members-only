@@ -28,7 +28,11 @@
         user_session_path
       ) %>
     <% end %>
-    
+    <% flash.each do |type, msg| %>
+      <div class="<%= type %>" style="color: green">
+        <%= msg %>
+      </div>
+    <% end %>
 
     <%= yield %>
   </body>
